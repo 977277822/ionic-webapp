@@ -43,3 +43,11 @@
         });
 >>        $urlRouterProvider.otherwise('/home');
 >    });
+
+## 导航
+> 页面导航 
+>> <ion-nav-bar class="bar-positive" align-title="center">           
+            <ion-nav-back-button></ion-nav-back-button>	
+   </ion-nav-bar>
+>> 视图 
+>  <ion-nav-view></ion-nav-view>
