@@ -31,3 +31,15 @@
   
 ## jsonp
 > $http.jsonp("XXXX?callback=JSON_CALLBACK");
+
+## 路由器配置
+> mobileApp.config(function($stateProvider, $urlRouterProvider){
+>>        $stateProvider.state("home",{
+            url : "/home",
+            templateUrl : "./web/app/templ/home.html"
+        }).state("other",{
+            url : "/other",
+            templateUrl : "./web/app/templ/other.html"
+        });
+>>        $urlRouterProvider.otherwise('/home');
+>    });
